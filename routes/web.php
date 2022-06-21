@@ -17,6 +17,5 @@ use App\Models\Gig;
 Route::get('/', function () {
   return view('home', [
     'gigs' => Gig::all(),
-    'heading' => "Latest Gigs",
   ]);
 });
